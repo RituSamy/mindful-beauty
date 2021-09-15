@@ -14,6 +14,13 @@
 		F65D01C22268EFAE0058C625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65D01C02268EFAE0058C625 /* LaunchScreen.storyboard */; };
 		F65D01CD2268EFAE0058C625 /* MindfulBeautyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D01CC2268EFAE0058C625 /* MindfulBeautyTests.swift */; };
 		F65D01D82268EFAE0058C625 /* MindfulBeautyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D01D72268EFAE0058C625 /* MindfulBeautyUITests.swift */; };
+		F65D01E62268EFF40058C625 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D01E52268EFF40058C625 /* DesignableView.swift */; };
+		F692DED52268FE600070DBEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692DED42268FE600070DBEB /* SearchViewController.swift */; };
+		F692DED72268FF760070DBEB /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692DED62268FF760070DBEB /* ProductData.swift */; };
+		F692DED92268FFC50070DBEB /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692DED82268FFC50070DBEB /* ProductInfo.swift */; };
+		F692DEDB226900680070DBEB /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692DEDA226900680070DBEB /* ProductInfoViewController.swift */; };
+		F692DEDD226903290070DBEB /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692DEDC226903290070DBEB /* ScannerViewController.swift */; };
+		F692DEDF2269045A0070DBEB /* ScannedProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692DEDE2269045A0070DBEB /* ScannedProductInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		F65D01D32268EFAE0058C625 /* MindfulBeautyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindfulBeautyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65D01D72268EFAE0058C625 /* MindfulBeautyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulBeautyUITests.swift; sourceTree = "<group>"; };
 		F65D01D92268EFAE0058C625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65D01E52268EFF40058C625 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		F692DED42268FE600070DBEB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F692DED62268FF760070DBEB /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
+		F692DED82268FFC50070DBEB /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
+		F692DEDA226900680070DBEB /* ProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
+		F692DEDC226903290070DBEB /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		F692DEDE2269045A0070DBEB /* ScannedProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedProductInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F62857242285B75E008A383B /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				F692DEDE2269045A0070DBEB /* ScannedProductInfoViewController.swift */,
+				F692DEDA226900680070DBEB /* ProductInfoViewController.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
 		F65D01AB2268EFAD0058C625 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +122,14 @@
 			children = (
 				F65D01B72268EFAD0058C625 /* AppDelegate.swift */,
 				F65D01B92268EFAD0058C625 /* ViewController.swift */,
+				F692DED42268FE600070DBEB /* SearchViewController.swift */,
+				F692DEDC226903290070DBEB /* ScannerViewController.swift */,
+				F62857242285B75E008A383B /* Info */,
 				F65D01BB2268EFAD0058C625 /* Main.storyboard */,
 				F65D01BE2268EFAE0058C625 /* Assets.xcassets */,
 				F65D01C02268EFAE0058C625 /* LaunchScreen.storyboard */,
 				F65D01C32268EFAE0058C625 /* Info.plist */,
+				F65D01E72268EFFD0058C625 /* HelperClasses */,
 			);
 			path = MindfulBeauty;
 			sourceTree = "<group>";
@@ -123,6 +150,16 @@
 				F65D01D92268EFAE0058C625 /* Info.plist */,
 			);
 			path = MindfulBeautyUITests;
+			sourceTree = "<group>";
+		};
+		F65D01E72268EFFD0058C625 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F65D01E52268EFF40058C625 /* DesignableView.swift */,
+				F692DED62268FF760070DBEB /* ProductData.swift */,
+				F692DED82268FFC50070DBEB /* ProductInfo.swift */,
+			);
+			path = HelperClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65D01BA2268EFAD0058C625 /* ViewController.swift in Sources */,
+				F692DEDF2269045A0070DBEB /* ScannedProductInfoViewController.swift in Sources */,
+				F692DED72268FF760070DBEB /* ProductData.swift in Sources */,
 				F65D01B82268EFAD0058C625 /* AppDelegate.swift in Sources */,
+				F692DED92268FFC50070DBEB /* ProductInfo.swift in Sources */,
+				F692DED52268FE600070DBEB /* SearchViewController.swift in Sources */,
+				F692DEDB226900680070DBEB /* ProductInfoViewController.swift in Sources */,
+				F65D01E62268EFF40058C625 /* DesignableView.swift in Sources */,
+				F692DEDD226903290070DBEB /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

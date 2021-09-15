@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lu9-2Z-3V1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,464 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MindfulBeauty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="DesignableView" customModule="MindfulBeauty" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindful " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhU-ds-J1S">
+                                <rect key="frame" x="81" y="64" width="213" height="76"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="60"/>
+                                <color key="textColor" red="0.22745098039215686" green="0.57647058823529407" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beauty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq3-lG-C33">
+                                <rect key="frame" x="118.5" y="148" width="138.5" height="60"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="50"/>
+                                <color key="textColor" red="0.8980392157" green="0.56078431370000004" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="0Vg-jA-AYI">
+                                <rect key="frame" x="86.5" y="222" width="202" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="26B-2f-3bm"/>
+                                    <constraint firstAttribute="width" constant="202" id="Zla-SU-Ltd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.66666666666666663" green="0.83921568627450982" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS4-Rs-Ecu">
+                                <rect key="frame" x="79.5" y="341" width="216" height="49"/>
+                                <color key="backgroundColor" red="0.73725490196078436" green="0.93333333333333335" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                                <state key="normal" title=" Search for an Item ">
+                                    <color key="titleColor" red="0.22745098039215686" green="0.57647058823529407" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oDU-sq-D0F" kind="show" id="rIb-nt-5SY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zav-YH-9p5">
+                                <rect key="frame" x="78" y="415" width="219" height="49"/>
+                                <color key="backgroundColor" red="0.73725490199999999" green="0.93333333330000001" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                                <state key="normal" title="          About Us          ">
+                                    <color key="titleColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sza-dP-h5B" kind="show" id="Ko4-me-87e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Vg-jA-AYI" firstAttribute="top" secondItem="Rq3-lG-C33" secondAttribute="bottom" constant="14" id="2Xq-GP-a1U"/>
+                            <constraint firstItem="0Vg-jA-AYI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7s3-BY-RcX"/>
+                            <constraint firstItem="aS4-Rs-Ecu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B2d-OC-4KO"/>
+                            <constraint firstItem="JhU-ds-J1S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RID-3n-RlG"/>
+                            <constraint firstItem="Rq3-lG-C33" firstAttribute="top" secondItem="JhU-ds-J1S" secondAttribute="bottom" constant="8" id="TxH-Mo-PSi"/>
+                            <constraint firstItem="zav-YH-9p5" firstAttribute="top" secondItem="aS4-Rs-Ecu" secondAttribute="bottom" constant="25" id="WaJ-zh-N37"/>
+                            <constraint firstItem="zav-YH-9p5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aG5-CT-FMB"/>
+                            <constraint firstItem="JhU-ds-J1S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b3c-ef-Jvy"/>
+                            <constraint firstItem="aS4-Rs-Ecu" firstAttribute="top" secondItem="0Vg-jA-AYI" secondAttribute="bottom" constant="8" id="ceW-ri-ux2"/>
+                            <constraint firstItem="Rq3-lG-C33" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mZ1-RQ-BpK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.89803921568627454" green="0.5607843137254902" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="yLp-iJ-dfV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="860" y="132.68365817091455"/>
+        </scene>
+        <!--Search for an Item-->
+        <scene sceneID="iFU-Fd-Qd2">
+            <objects>
+                <viewController title="Search for an Item" id="oDU-sq-D0F" customClass="SearchViewController" customModule="MindfulBeauty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xfd-hl-gJg" customClass="DesignableView" customModule="MindfulBeauty" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="0om-G5-bGq">
+                                <rect key="frame" x="67.5" y="89" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1mU-sU-JeK"/>
+                                    <constraint firstAttribute="height" constant="128" id="yU8-Q2-fZO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDY-Yk-XJu">
+                                <rect key="frame" x="99" y="225" width="177" height="49"/>
+                                <color key="backgroundColor" red="0.73725490199999999" green="0.93333333330000001" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                                <state key="normal" title="   Scan an Item   ">
+                                    <color key="titleColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8TK-PI-NSK" kind="show" id="Etu-TU-Ak0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter barcode number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o0m-6w-q4O">
+                                <rect key="frame" x="16" y="377.5" width="165.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ5-JB-Rqb">
+                                <rect key="frame" x="290" y="377" width="71" height="41"/>
+                                <color key="backgroundColor" red="0.73725490199999999" green="0.93333333330000001" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                <state key="normal" title=" Search ">
+                                    <color key="titleColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="search:" destination="oDU-sq-D0F" eventType="touchUpInside" id="V2f-8J-Mb5"/>
+                                    <segue destination="H7G-gL-tpc" kind="show" id="fJY-dL-Uxu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try it with some of these barcodes!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="285-Au-Km7">
+                                <rect key="frame" x="31.5" y="416" width="312.5" height="29"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                <color key="textColor" red="0.8980392157" green="0.56078431370000004" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="T8X-lt-4g7">
+                                <rect key="frame" x="16" y="459" width="150" height="193"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0609332850231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqr-9M-5on">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0012044015605" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDj-k2-dUo">
+                                        <rect key="frame" x="0.0" y="55" width="150" height="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0071249017296" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNx-I7-1bM">
+                                        <rect key="frame" x="0.0" y="110" width="150" height="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0012044037539" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-Ya-gre">
+                                        <rect key="frame" x="0.0" y="165" width="150" height="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or enter a barcode..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATf-Uk-THZ">
+                                <rect key="frame" x="71" y="315" width="233.5" height="36.5"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                                <color key="textColor" red="0.8980392157" green="0.56078431370000004" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0om-G5-bGq" firstAttribute="top" secondItem="L1p-sh-5iB" secondAttribute="top" constant="25" id="9Tz-Np-Vxv"/>
+                            <constraint firstItem="L1p-sh-5iB" firstAttribute="trailing" secondItem="CZ5-JB-Rqb" secondAttribute="trailing" constant="14" id="CMR-93-NSh"/>
+                            <constraint firstItem="XDY-Yk-XJu" firstAttribute="centerX" secondItem="L1p-sh-5iB" secondAttribute="centerX" id="K33-vd-99s"/>
+                            <constraint firstItem="o0m-6w-q4O" firstAttribute="leading" secondItem="L1p-sh-5iB" secondAttribute="leading" constant="16" id="OYo-vD-ZES"/>
+                            <constraint firstItem="L1p-sh-5iB" firstAttribute="bottom" secondItem="285-Au-Km7" secondAttribute="bottom" constant="222" id="Or4-ic-m2H"/>
+                            <constraint firstItem="0om-G5-bGq" firstAttribute="centerX" secondItem="L1p-sh-5iB" secondAttribute="centerX" id="SfV-15-LNr"/>
+                            <constraint firstItem="T8X-lt-4g7" firstAttribute="leading" secondItem="L1p-sh-5iB" secondAttribute="leading" constant="16" id="VxR-qD-FBF"/>
+                            <constraint firstItem="T8X-lt-4g7" firstAttribute="top" secondItem="285-Au-Km7" secondAttribute="bottom" constant="14" id="a36-VK-LGu"/>
+                            <constraint firstItem="o0m-6w-q4O" firstAttribute="top" secondItem="ATf-Uk-THZ" secondAttribute="bottom" constant="26" id="bAc-NI-gqX"/>
+                            <constraint firstItem="XDY-Yk-XJu" firstAttribute="top" secondItem="0om-G5-bGq" secondAttribute="bottom" constant="8" id="erz-7j-87F"/>
+                            <constraint firstItem="285-Au-Km7" firstAttribute="centerX" secondItem="L1p-sh-5iB" secondAttribute="centerX" id="hlm-Tn-7rz"/>
+                            <constraint firstItem="ATf-Uk-THZ" firstAttribute="top" secondItem="XDY-Yk-XJu" secondAttribute="bottom" constant="41" id="k3g-T1-FFv"/>
+                            <constraint firstItem="CZ5-JB-Rqb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o0m-6w-q4O" secondAttribute="trailing" constant="8" symbolic="YES" id="nrx-2V-Ou3"/>
+                            <constraint firstItem="CZ5-JB-Rqb" firstAttribute="top" secondItem="L1p-sh-5iB" secondAttribute="top" constant="313" id="uqC-it-6Gc"/>
+                            <constraint firstItem="L1p-sh-5iB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o0m-6w-q4O" secondAttribute="trailing" symbolic="YES" id="wCD-1P-dul"/>
+                            <constraint firstItem="ATf-Uk-THZ" firstAttribute="centerX" secondItem="L1p-sh-5iB" secondAttribute="centerX" id="zqI-TZ-8pW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L1p-sh-5iB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.8980392157" green="0.56078431370000004" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="o0m-6w-q4O" id="fgg-L2-kWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIA-Hv-i6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5999999999999" y="-59.820089955022496"/>
+        </scene>
+        <!--Scan a Barcode-->
+        <scene sceneID="2dc-1c-NpP">
+            <objects>
+                <viewController title="Scan a Barcode" id="8TK-PI-NSK" customClass="ScannerViewController" customModule="MindfulBeauty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YzG-3O-bLs" customClass="DesignableView" customModule="MindfulBeauty" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtx-4W-2K1">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="2IE-Ru-cBs" kind="show" identifier="productInfoSegue" id="9ku-vC-kmc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1SM-68-hs8" firstAttribute="bottom" secondItem="wtx-4W-2K1" secondAttribute="bottom" constant="20" id="Ja3-JI-np8"/>
+                            <constraint firstItem="1SM-68-hs8" firstAttribute="trailing" secondItem="wtx-4W-2K1" secondAttribute="trailing" constant="16" id="cQ4-od-odM"/>
+                            <constraint firstItem="wtx-4W-2K1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1SM-68-hs8" secondAttribute="leading" symbolic="YES" id="yVK-2t-z7I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1SM-68-hs8"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s40-0g-ML6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="-473"/>
+        </scene>
+        <!--Product Information-->
+        <scene sceneID="hhN-NY-5kn">
+            <objects>
+                <viewController title="Product Information" id="2IE-Ru-cBs" customClass="ScannedProductInfoViewController" customModule="MindfulBeauty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OjC-SK-UzB" customClass="DesignableView" customModule="MindfulBeauty" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-uq-GuZ">
+                                <rect key="frame" x="123.5" y="83" width="128.5" height="29"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAI-aw-E8x">
+                                <rect key="frame" x="67.5" y="143" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZEx-lZ-Q6v"/>
+                                    <constraint firstAttribute="width" constant="240" id="aKK-CQ-Xic"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="121" translatesAutoresizingMaskIntoConstraints="NO" id="buK-kv-xBF">
+                                <rect key="frame" x="16" y="310.5" width="290.5" height="329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This company is cruelty free!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foH-kx-KNt">
+                                        <rect key="frame" x="0.0" y="0.0" width="290.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potentially Harmful Ingredients:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCA-Cr-Usf">
+                                        <rect key="frame" x="0.0" y="150" width="290.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potential Allgergens:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GH-oq-Ufc">
+                                        <rect key="frame" x="0.0" y="300" width="290.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zHU-uq-GuZ" firstAttribute="centerX" secondItem="ASz-hT-FMG" secondAttribute="centerX" id="MWi-Za-BR0"/>
+                            <constraint firstItem="buK-kv-xBF" firstAttribute="top" secondItem="PAI-aw-E8x" secondAttribute="bottom" constant="39.5" id="gwn-UL-OrC"/>
+                            <constraint firstItem="PAI-aw-E8x" firstAttribute="centerX" secondItem="ASz-hT-FMG" secondAttribute="centerX" id="qXE-R1-MKQ"/>
+                            <constraint firstItem="zHU-uq-GuZ" firstAttribute="top" secondItem="ASz-hT-FMG" secondAttribute="top" constant="19" id="rNn-oo-Uil"/>
+                            <constraint firstItem="buK-kv-xBF" firstAttribute="leading" secondItem="ASz-hT-FMG" secondAttribute="leading" constant="16" id="wsF-Pb-oVo"/>
+                            <constraint firstItem="PAI-aw-E8x" firstAttribute="top" secondItem="zHU-uq-GuZ" secondAttribute="bottom" constant="31" id="xZB-c9-MOS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ASz-hT-FMG"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="allergens" destination="0GH-oq-Ufc" id="wIW-mk-YjL"/>
+                        <outlet property="crueltyFree" destination="foH-kx-KNt" id="uNU-3E-itM"/>
+                        <outlet property="harmfulIng" destination="mCA-Cr-Usf" id="O0u-fc-HQj"/>
+                        <outlet property="productImage" destination="PAI-aw-E8x" id="mnZ-Xb-e8D"/>
+                        <outlet property="productName" destination="zHU-uq-GuZ" id="yIN-2R-CRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoj-Ne-UOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3281" y="-476"/>
+        </scene>
+        <!--Product Information-->
+        <scene sceneID="6Iz-R5-0re">
+            <objects>
+                <viewController title="Product Information" id="H7G-gL-tpc" customClass="ProductInfoViewController" customModule="MindfulBeauty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bJS-nC-FWy" customClass="DesignableView" customModule="MindfulBeauty" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXm-aR-44D">
+                                <rect key="frame" x="123.5" y="83" width="128.5" height="29"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OFq-M5-C9O">
+                                <rect key="frame" x="67.5" y="142" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ajJ-P3-Bsu"/>
+                                    <constraint firstAttribute="height" constant="128" id="wuL-l7-HsW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="121" translatesAutoresizingMaskIntoConstraints="NO" id="c90-yZ-fkM">
+                                <rect key="frame" x="16" y="318" width="290.5" height="329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This company is cruelty free!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU8-aB-NmE">
+                                        <rect key="frame" x="0.0" y="0.0" width="290.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potentially Harmful Ingredients:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-Vp-AJl">
+                                        <rect key="frame" x="0.0" y="150" width="290.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potential Allgergens:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gah-02-V9W">
+                                        <rect key="frame" x="0.0" y="300" width="290.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                        <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c90-yZ-fkM" firstAttribute="leading" secondItem="NrU-Ru-Gia" secondAttribute="leading" constant="16" id="5te-Bp-43I"/>
+                            <constraint firstItem="OFq-M5-C9O" firstAttribute="top" secondItem="yXm-aR-44D" secondAttribute="bottom" constant="30" id="Aeq-w8-esI"/>
+                            <constraint firstItem="yXm-aR-44D" firstAttribute="centerX" secondItem="NrU-Ru-Gia" secondAttribute="centerX" id="BtK-W7-JOJ"/>
+                            <constraint firstItem="c90-yZ-fkM" firstAttribute="top" secondItem="OFq-M5-C9O" secondAttribute="bottom" constant="48" id="Epd-Ab-WBS"/>
+                            <constraint firstItem="OFq-M5-C9O" firstAttribute="centerX" secondItem="NrU-Ru-Gia" secondAttribute="centerX" id="X31-iC-wpx"/>
+                            <constraint firstItem="yXm-aR-44D" firstAttribute="top" secondItem="NrU-Ru-Gia" secondAttribute="top" constant="19" id="YKo-jK-nxP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NrU-Ru-Gia"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="allergens" destination="gah-02-V9W" id="WzW-Z8-3pn"/>
+                        <outlet property="crueltyFree" destination="XU8-aB-NmE" id="x9q-ZS-IL5"/>
+                        <outlet property="harmfulIng" destination="FKb-Vp-AJl" id="zSA-Uk-8DP"/>
+                        <outlet property="productImage" destination="OFq-M5-C9O" id="6HK-Y5-bXC"/>
+                        <outlet property="productName" destination="yXm-aR-44D" id="bNp-qz-6ch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEH-O8-DQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="234.33283358320841"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="nDp-aK-eXv">
+            <objects>
+                <viewController title="About Us" id="sza-dP-h5B" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="x4w-JZ-KwC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-B7-4sZ">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUb-qf-wl4">
+                                <rect key="frame" x="16" y="81" width="352" height="378"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Mindful Beauty is an organization dedicated to raising awareness when people buy beauty products every day. By learning about the ethical practices of companies and the health hazards of their products, customers can make more informed decisions about what they purchase.</string>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                                <color key="textColor" red="0.2274509804" green="0.57647058819999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.93333333330000001" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="gHf-gf-rds"/>
+                    </scrollView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYd-ix-xEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5999999999999" y="697.60119940029995"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u50-bn-wjL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lu9-2Z-3V1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pql-79-zgs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="N26-Xt-7OS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSg-oW-6LN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="910" height="607"/>
+        <image name="logo1" width="384" height="244"/>
+    </resources>
 </document>
